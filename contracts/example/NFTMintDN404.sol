@@ -3,10 +3,10 @@ pragma solidity ^0.8.4;
 
 import "../DN404.sol";
 import "../DN404Mirror.sol";
-import {Ownable} from "solady/auth/Ownable.sol";
-import {LibString} from "solady/utils/LibString.sol";
-import {SafeTransferLib} from "solady/utils/SafeTransferLib.sol";
-import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
+import {Ownable} from "../auth/Ownable.sol";
+import {LibString} from "../utils/LibString.sol";
+import {SafeTransferLib} from "../utils/SafeTransferLib.sol";
+import {MerkleProofLib} from "../utils/MerkleProofLib.sol";
 
 /**
  * @title NFTMintDN404

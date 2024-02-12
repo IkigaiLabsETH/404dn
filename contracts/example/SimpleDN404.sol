@@ -3,9 +3,9 @@ pragma solidity ^0.8.4;
 
 import "../DN404.sol";
 import "../DN404Mirror.sol";
-import {Ownable} from "solady/auth/Ownable.sol";
-import {LibString} from "solady/utils/LibString.sol";
-import {SafeTransferLib} from "solady/utils/SafeTransferLib.sol";
+import {Ownable} from "../auth/Ownable.sol";
+import {LibString} from "../utils/LibString.sol";
+import {SafeTransferLib} from "../utils/SafeTransferLib.sol";
 
 contract SimpleDN404 is DN404, Ownable {
     string private _name;
