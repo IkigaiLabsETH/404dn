@@ -1438,6 +1438,11 @@ diff@5.0.0:
   resolved "https://registry.yarnpkg.com/diff/-/diff-5.0.0.tgz#7ed6ad76d859d030787ec35855f5b1daf31d852b"
   integrity sha512-/VTCrvm5Z0JGty/BWHljh+BAiw3IK+2j87NGMu8Nwc/f48WoDAC395uomO9ZD117ZOBaHmkX1oyLvkVM/aIT3w==
 
+dn404@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/dn404/-/dn404-0.0.1.tgz#3ff4da70faeebfac354218826473ab434975326e"
+  integrity sha512-YNBejiJVfzxq9l/e1eBAk/3HwEqQnfHpl03wzTsCZPY1Le0ujVfUojNfG/9gbP8QBGvI8A5X+X/FaYmZwHzgIA==
+
 docker-modem@^1.0.8:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/docker-modem/-/docker-modem-1.0.9.tgz#a1f13e50e6afb6cf3431b2d5e7aac589db6aaba8"
@@ -2566,6 +2571,11 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+solady@^0.0.168:
+  version "0.0.168"
+  resolved "https://registry.yarnpkg.com/solady/-/solady-0.0.168.tgz#b466f907455632241f459a623f285a30990ef645"
+  integrity sha512-7tgy21selT6Tg+8aAxkLUyjjCx9iQ3m3KE+5D4x/tIXr4wAfoVe6EK0lmmZjyIv8MRqQSx/vB6NfIC1LME3oZA==
 
 solc@0.7.3:
   version "0.7.3"

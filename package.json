@@ -1,5 +1,8 @@
 {
-  "name": "hardhat-javascript-starter",
+  "name": "dn404",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Implementation of a co-joined ERC20 and ERC721 pair.",
   "scripts": {
     "build": "npx thirdweb@latest detect",
     "deploy": "npx thirdweb@latest deploy",
@@ -11,6 +14,8 @@
   },
   "dependencies": {
     "@thirdweb-dev/contracts": "^3.8.0",
+    "dn404": "^0.0.1",
+    "solady": "^0.0.168",
     "zksync-web3": "^0.14.3"
   }
 }

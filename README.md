@@ -1,47 +1,72 @@
-## Getting Started
+# DN404 🥜
 
-Create a project using this example:
+[![NPM][npm-shield]][npm-url]
+[![CI][ci-shield]][ci-url]
 
-```bash
-npx thirdweb create --contract --template hardhat-javascript-starter
+DN404 is an implementation of a co-joined ERC20 and ERC721 pair.
+
+- Full compliance with the ERC20 and ERC721 specifications.
+- Transfers on one side will be reflected on the other side.
+- Pretty optimized.
+
+## Installation
+
+To install with [**Foundry**](https://github.com/gakonst/foundry):
+
+```sh
+forge install vectorized/dn404
 ```
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+To install with [**Hardhat**](https://github.com/nomiclabs/hardhat):
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) to learn more.
-
-## Building the project
-
-After any changes to the contract, run:
-
-```bash
-npm run build
-# or
-yarn build
+```sh
+npm install dn404
 ```
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) detected on your contract.
+## Contracts
 
-## Deploying Contracts
+The Solidity smart contracts are located in the `src` directory.
 
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
-
-```bash
-npm run deploy
-# or
-yarn deploy
+```ml
+src
+├─ DN404 — "ERC20 contract for DN404"
+├─ DN404Mirror — "ERC721 contract for DN404"
+└─ example
+   └─ SimpleDN404 — "Simple DN404 example"
 ```
 
-## Releasing Contracts
+## Contributing
 
-If you want to release a version of your contracts publicly, you can use one of the followings command:
+Feel free to make a pull request.
 
-```bash
-npm run release
-# or
-yarn release
-```
+Guidelines same as [Solady's](https://github.com/Vectorized/solady/issues/19).
 
-## Join our Discord!
+## Safety
 
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+This is **experimental software** and is provided on an "as is" and "as available" basis.
+
+We **do not give any warranties** and **will not be liable for any loss** incurred through any use of this codebase.
+
+While DN404 has been heavily tested, there may be parts that may exhibit unexpected emergent behavior when used with other code, or may break in future Solidity versions.  
+
+Please always include your own thorough tests when using DN404 to make sure it works correctly with your code.  
+
+## Upgradability
+
+Most contracts in DN404 are compatible with both upgradeable and non-upgradeable (i.e. regular) contracts. 
+
+Please call any required internal initialization methods accordingly.
+
+## Acknowledgements
+
+This repository is inspired by various sources:
+
+- [Serec](https://twitter.com/SerecThunderson)
+- [Solady](https://github.com/vectorized/solady)
+- [ERC721A](https://github.com/chiru-labs/ERC721A)
+
+[npm-shield]: https://img.shields.io/npm/v/dn404.svg
+[npm-url]: https://www.npmjs.com/package/dn404
+
+[ci-shield]: https://img.shields.io/github/actions/workflow/status/vectorized/dn404/ci.yml?branch=main&label=build
+[ci-url]: https://github.com/vectorized/dn404/actions/workflows/ci.yml
