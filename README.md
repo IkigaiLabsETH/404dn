@@ -3,6 +3,10 @@
 [![NPM][npm-shield]][npm-url]
 [![CI][ci-shield]][ci-url]
 
+There's been a genuine concerted effort to put out the best contract possible, with safety, flexibility, and optimization as core values
+
+Many Fungible NFT contacts forks and original have a number of issues that are against the spec of ERC721, or outright dangerous. Below the fix by the OG gigabrain smart contract devs:
+
 DN404 is an implementation of a co-joined ERC20 and ERC721 pair.
 
 - Full compliance with the ERC20 and ERC721 specifications.
